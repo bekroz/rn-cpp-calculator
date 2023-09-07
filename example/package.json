@@ -6,7 +6,8 @@
     "android": "react-native run-android",
     "ios": "react-native run-ios",
     "start": "react-native start",
-    "pods": "pod-install --quiet"
+    "pods": "pod-install --quiet",
+    "test": "jest"
   },
   "dependencies": {
     "react": "18.2.0",
@@ -18,8 +19,12 @@
     "@babel/runtime": "^7.20.0",
     "@react-native/eslint-config": "^0.72.2",
     "@react-native/metro-config": "^0.72.11",
-    "metro-react-native-babel-preset": "0.76.8",
-    "babel-plugin-module-resolver": "^5.0.0"
+    "@testing-library/jest-native": "^5.4.3",
+    "@testing-library/react-native": "^12.3.0",
+    "@types/jest": "^28.1.2",
+    "babel-plugin-module-resolver": "^5.0.0",
+    "jest": "^28.1.1",
+    "metro-react-native-babel-preset": "0.76.8"
   },
   "engines": {
     "node": ">=16"
