@@ -1,5 +1,5 @@
 import { useCallback } from 'react';
-import { StyleSheet, TextInput, View } from 'react-native';
+import { TextInput, View, type TextStyle, type ViewStyle } from 'react-native';
 
 interface NumInputBoxProps {
   value: number;
@@ -24,10 +24,10 @@ export const NumInputBox: React.FC<NumInputBoxProps> = ({
   );
 
   return (
-    <View style={styles.container}>
+    <View style={$container}>
       <TextInput
         autoFocus={autoFocus}
-        style={styles.inputField}
+        style={$inputField}
         keyboardType="number-pad"
         maxLength={3}
         onChangeText={memoizedOnChange}
@@ -39,19 +39,18 @@ export const NumInputBox: React.FC<NumInputBoxProps> = ({
   );
 };
 
-const styles = StyleSheet.create({
-  container: {
-    padding: 12,
-  },
-  inputField: {
-    height: 100,
-    width: 100,
-    borderWidth: 1,
-    borderRadius: 20,
-    padding: 12,
-    backgroundColor: 'white',
-    fontSize: 30,
-    textAlign: 'center',
-    fontWeight: 'bold',
-  },
-});
+const $container: ViewStyle = {
+  padding: 12,
+};
+
+const $inputField: TextStyle = {
+  height: 100,
+  width: 100,
+  borderWidth: 1,
+  borderRadius: 20,
+  padding: 12,
+  backgroundColor: 'white',
+  fontSize: 30,
+  textAlign: 'center',
+  fontWeight: 'bold',
+};
