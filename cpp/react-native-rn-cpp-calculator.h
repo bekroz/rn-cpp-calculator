@@ -2,7 +2,7 @@
 #define RNCPPCALCULATOR_H
 
 namespace rncppcalculator {
-  double multiply(double a, double b);
+  double add(double a, double b);
 }
 
 #endif /* RNCPPCALCULATOR_H */

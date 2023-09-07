@@ -23,12 +23,12 @@ public class RnCppCalculatorModule extends NativeRnCppCalculatorSpec {
     System.loadLibrary("cpp");
   }
 
-  private static native double nativeMultiply(double a, double b);
+  private static native double nativeAdd(double a, double b);
 
   // Example method
   // See https://reactnative.dev/docs/native-modules-android
   @Override
-  public double multiply(double a, double b) {
-    return nativeMultiply(a, b);
+  public double add(double a, double b) {
+    return nativeAdd(a, b);
   }
 }

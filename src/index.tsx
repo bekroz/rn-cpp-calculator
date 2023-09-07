@@ -1,5 +1,5 @@
 const RnCppCalculator = require('./NativeRnCppCalculator').default;
 
-export function multiply(a: number, b: number): number {
-  return RnCppCalculator.multiply(a, b);
+export function add(a: number, b: number): number {
+  return RnCppCalculator.add(a, b);
 }

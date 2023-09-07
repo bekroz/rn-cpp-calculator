@@ -3,6 +3,6 @@
 
 extern "C"
 JNIEXPORT jdouble JNICALL
-Java_com_rncppcalculator_RnCppCalculatorModule_nativeMultiply(JNIEnv *env, jclass type, jdouble a, jdouble b) {
-    return rncppcalculator::multiply(a, b);
+Java_com_rncppcalculator_RnCppCalculatorModule_nativeAdd(JNIEnv *env, jclass type, jdouble a, jdouble b) {
+    return rncppcalculator::add(a, b);
 }

@@ -12,11 +12,11 @@ npm install react-native-rn-cpp-calculator
 
 
 ```js
-import { multiply } from 'react-native-rn-cpp-calculator';
+import { add } from 'react-native-rn-cpp-calculator';
 
 // ...
 
-const result = multiply(3, 7);
+const result = add(3, 7);
 ```
 
 ## Contributing
