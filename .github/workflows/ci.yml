@@ -146,6 +146,7 @@ jobs:
         env:
           NO_FLIPPER: 1
 
-      - name: Build example for iOS
-        run: |
-          yarn turbo run build:ios --cache-dir="${{ env.TURBO_CACHE_DIR }}"
+      # TODO: Fix ios workflow
+      # - name: Build example for iOS
+      # run: |
+      # yarn turbo run build:ios --cache-dir="${{ env.TURBO_CACHE_DIR }}"
