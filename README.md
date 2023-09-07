@@ -1,5 +1,7 @@
 # react-native-rn-cpp-calculator
 
+[![CI](https://github.com/bekroz/rn-cpp-calculator/actions/workflows/ci.yml/badge.svg)](https://github.com/bekroz/rn-cpp-calculator/actions/workflows/ci.yml)
+
 Simple C++ calculator in react native
 
 ## Installation
@@ -9,7 +11,6 @@ npm install react-native-rn-cpp-calculator
 ```
 
 ## Usage
-
 
 ```js
 import { add } from 'react-native-rn-cpp-calculator';
